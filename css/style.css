@@ -61,6 +61,8 @@ h3{
 }
 ul{
     list-style-type: none;
+    padding: 0;
+    margin:0;
 }
 ul li a{
     text-decoration: none;
@@ -99,7 +101,7 @@ ul li a{
 .price{
     display: block;
 }
-.price-hotel .only.one{
+.price-hotel .only-one{
     border-bottom: 1px solid lightgray;
 }
 .small-medium{
@@ -107,4 +109,184 @@ ul li a{
 }
 .finale{
     display: none;
+}
+@media screen and (max-width:576px) {
+    .row{
+        flex-direction: column;
+    }
+    .col-8,
+    .col-4,
+    .col-6,
+    .col-3{
+        width: 100%;
+    }
+    .col-12{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    /*ORDER*/
+
+    .col-12 .col-6{
+        order: 3;
+    }
+    .col-12 .col-3:first-of-type{
+        order: 1;
+    }
+    .col-12 .col-3:last-of-type{
+        order: 2;
+    }
+
+    /*ORDER*/
+
+    .col-6{
+        position: relative;
+        margin-bottom: 10px;
+    }
+    .col-6,
+    .col-3{
+        padding: 0 5px;
+    }
+
+    /*BOTTOM*/
+
+    li button{
+        position: absolute;
+        top: 0%;
+        left: 70%;
+        width: 30%;
+    }
+    .btn-warning{
+        border-radius: 5px;
+        width: 30%;
+        margin:0;
+    }
+
+    /*BOTTOM*/
+
+    h3{
+        display: none;
+    }
+    .small-medium{
+        display: inline;
+    }
+    .col-3:first-of-type{
+        display: none;
+    }
+    .price-hotel{
+        display: none;
+    }
+    .final-hidden a{
+        display: none;
+    }
+    .col-4 .i-back{
+        position: absolute;
+        top: 5%;
+        left: 86%;
+        background-color: white;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+    .finale{
+        display: inline;
+        border-top: 1px solid lightgray;
+        padding:5px 85px;
+    }
+}
+@media screen and (max-width:768px) {
+    .row{
+        flex-direction: column;
+    }
+    .col-8,
+    .col-4,
+    .col-6,
+    .col-3{
+        width: 100%;
+    }
+    .col-12{
+        flex-direction: column;
+        width: 100%;
+    }
+    .col-6,
+    .col-3{
+        padding: 0 5px;
+    }
+    .col-6{
+        position: relative;
+        margin-bottom: 10px;
+    }
+
+    /*ORDER*/
+
+    .col-12 .col-6{
+        order: 3;
+    }
+    .col-12 .col-3:first-of-type{
+        order: 1;
+    }
+    .col-12 .col-3:last-of-type{
+        order: 2;
+    }
+
+     /*ORDER*/
+
+    /* BOTTOM*/ 
+
+    li button{
+        position: absolute;
+        top: 0%;
+        left: 70%;
+        width: 30%;
+    }
+    .btn-warning{
+        border-radius: 5px;
+        width: 30%;
+        margin:0;
+    }
+
+     /* BOTTOM*/ 
+
+    h3{
+        display: none;
+    }
+    .small-medium{
+        display: inline;
+    }
+    .col-3:first-of-type{
+        display: none;
+    }
+    .price-hotel{
+        display: none;
+    }
+    .final-hidden a{
+        display: none;
+    }
+    .finale{
+        display: inline;
+        border-top: 1px solid lightgray;
+        padding:5px 83px;
+    }
+    .col-4 .i-back{
+        position: absolute;
+        top: 5%;
+        left: 87%;
+        background-color: white;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+    
+    
+}
+@media screen and (max-width:992px){
+    .col-4 .i-back{
+        position: absolute;
+        top: 5%;
+        left: 75%;
+        background-color: white;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
 }
